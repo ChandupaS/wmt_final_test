@@ -27,6 +27,12 @@ const itemSchema = new mongoose.Schema(
       default: "",
       trim: true,
     },
+    seralnumber: {
+      type: String,
+      required: [true, "Serial number is required"],
+      unique: true,
+      trim: true,
+    }
   },
   { timestamps: true }
 );
